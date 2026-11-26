@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOM BARBER | Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">EVOM BARBER</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#agendar">Agendar</a>
+            <a href="#contato">Localização</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>EVOM <span>BARBER</span></h1>
+        <p>Corte na régua, navalha afiada e atendimento com hora marcada.</p>
+        <a href="#agendar" class="btn">Marcar Horário</a>
+    </section>
+
+    <section id="servicos">
+        <h2 class="section-title">Tabela de <span>Preços</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Degradê ou Social</h3>
+                    <span class="price">R$ 25</span>
+                </div>
+                <p>Corte na máquina ou tesoura com acabamento na navalha.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Corte e Sobrancelha</h3>
+                    <span class="price">R$ 30</span>
+                </div>
+                <p>Degradê ou social completo junto com o alinhamento da sobrancelha.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Corte Premium</h3>
+                    <span class="price">R$ 45</span>
+                </div>
+                <p>Corte, sobrancelha e aplicação de máscara removedora de cravos.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <h3>Pezinho & Acabamento</h3>
+                    <span class="price">R$ 20</span>
+                </div>
+                <p>Limpeza dos contornos e acabamento rápido.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendar">
+        <h2 class="section-title">Agendar <span>Horário</span></h2>
+        <div class="booking-container">
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="servico">Serviço</label>
+                    <select id="servico" required>
+                        <option value="Degradê ou Social (R$ 25)">Degradê ou Social - R$ 25</option>
+                        <option value="Corte e Sobrancelha (R$ 30)">Corte e Sobrancelha - R$ 30</option>
+                        <option value="Corte Premium (R$ 45)">Corte Premium (Corte + Sobrancelha + Removedor de Cravos) - R$ 45</option>
+                        <option value="Pezinho & Acabamento (R$ 20)">Pezinho & Acabamento - R$ 20</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="barbeiro">Barbeiro</label>
+                    <select id="barbeiro" required>
+                        <option value="Lucas Bueno">Lucas Bueno</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Horário (14:00 às 17:00)</label>
+                    <input type="time" id="hora" min="14:00" max="17:00" required>
+                </div>
+
+                <button type="submit" class="btn">Chamar no WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p><strong>EVOM BARBER</strong></p>
+        <p>Rua Coronel Olegário de Macedo</p>
+        <p>Atendimento: Segunda a Sexta, das 14:00 às 17:00</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
